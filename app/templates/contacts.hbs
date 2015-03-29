@@ -3,7 +3,11 @@
     <li>
       {{contact.name}}
       {{contact.phone}}
+      {{input value=contact.phone}}
     </li>
   {{/each}}
 </ul>
+<p>
+  {{isObjectDirty}}
+</p>
 {{outlet}}

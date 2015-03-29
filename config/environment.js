@@ -18,13 +18,13 @@ module.exports = function(environment) {
       // when it is created
     },
     contentSecurityPolicy: {
-      'default-src': "'none' localhost:4000",
-      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' localhost:4000",
+      'default-src': "'none' http://localhost:4000",
+      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' http://localhost:4000",
       'font-src': "'self' data: fonts.gstatic.com",
-      'connect-src': "'self' localhost:4000",
+      'connect-src': "'self' http://localhost:4000",
       'img-src': "'self'",
       'style-src': "'self' 'unsafe-inline' fonts.googleapis.com",
-      'frame-src': ""
+      'frame-src': "http://localhost:4000"
     }
   };
 
