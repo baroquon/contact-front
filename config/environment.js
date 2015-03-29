@@ -16,6 +16,15 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    contentSecurityPolicy: {
+      'default-src': "'none' localhost:4000",
+      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' localhost:4000",
+      'font-src': "'self' data: fonts.gstatic.com",
+      'connect-src': "'self' localhost:4000",
+      'img-src': "'self'",
+      'style-src': "'self' 'unsafe-inline' fonts.googleapis.com",
+      'frame-src': ""
     }
   };
 
