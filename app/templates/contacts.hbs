@@ -1,5 +1,9 @@
-{{#each model as |contact|}}
-  {{contact.name}}
-  {{contact.phone}}
-{{/each}}
+<ul>
+  {{#each model as |contact|}}
+    <li>
+      {{contact.name}}
+      {{contact.phone}}
+    </li>
+  {{/each}}
+</ul>
 {{outlet}}
